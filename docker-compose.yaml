@@ -1,5 +1,5 @@
 services:
-  databse:
+  db:
     container_name: mysql_db
     image: 'mysql:latest'
     environment:
@@ -25,7 +25,7 @@ services:
     ports:
       - "8080:8080"
     depends_on:
-      - databse
+      - db
     networks:
       - backend-network
     restart: on-failure
