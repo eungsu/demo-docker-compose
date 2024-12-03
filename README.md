@@ -113,7 +113,7 @@ git clone https://github.com/eungsu/demo-docker-compose.git
 cd demo-docker-compose
 
 # 스프링 부트 프로젝트를 패키징한다.
-mvnw clean package
+mvnw clean package -DskipTests
 
 # docker compose를 실행한다.
 docker-compose -f docker-compose.yaml up --build -d
